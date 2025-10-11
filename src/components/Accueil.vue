@@ -20,55 +20,67 @@
 </template>
 
 <style scoped>
+/* =================================== */
+/* Styles de base (Mobile First)       */
+/* =================================== */
 .accueil-section {
-  position: relative; /* Nécessaire pour le positionnement du contenu */
-  min-height: 90vh;
+  /* Sur mobile, on veut que la section prenne toute la hauteur de l'écran */
+  min-height: 90vh; 
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenu {
+  flex-direction: column; /* Les éléments s'empilent verticalement */
+  justify-content: center; /* Centrage vertical */
+  align-items: center; /* Centrage horizontal */
   text-align: center;
-}
-
-.sous-titre {
-  margin-bottom: 1rem;
-  color: #ccc;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 1rem;
 }
 
 .nom {
-  color: #fff;
-  margin-bottom: 1rem;
-  font-size: 3.5rem;
+  font-size: 2.8rem; /* Taille adaptée au mobile */
   font-weight: 700;
-  line-height: 4.5rem;
-  letter-spacing: .5px;
+  margin-bottom: 0.5rem;
 }
 
+.sous-titre {
+  font-size: 1.1rem;
+  color: var(--couleur-texte-secondaire);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
 
 .accroche {
-  max-width: 600px;
-  margin: 0 auto 2rem auto;
-  color: rgba(220,220,235,.85);
+  max-width: 500px;
+  margin-bottom: 2rem;
+  color: var(--couleur-texte-secondaire);
 }
 
 .liens-sociaux a {
   margin: 0 0.5rem;
-  padding: .9rem 1.2rem;
-  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
   font-weight: 600;
   text-decoration: none;
   transition: .25s ease;
-  border: 1px solid rgba(255,255,255,.25);
-  background: rgba(255,255,255,.05);
-  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--couleur-texte);
 }
 
 .liens-sociaux a:hover {
-  border-color: #fff;
-  background: rgba(255,255,255,.12);
+  border-color: var(--couleur-texte);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* =================================== */
+/* Styles pour écrans plus grands (Desktop) */
+/* Ce code ne s'appliquera que si la largeur de l'écran est de 768px ou plus */
+/* =================================== */
+@media (min-width: 768px) {
+  .nom {
+    font-size: 4rem; /* On augmente la taille du titre sur grand écran */
+  }
+
+  .sous-titre {
+    font-size: 1.5rem;
+  }
 }
 </style>

@@ -1,9 +1,20 @@
 <script setup lang="ts">
 import Accueil from './components/Accueil.vue';
-import APropos from './components/APropos.vue'
-import Realisations from './components/Realisations.vue'
+import Competences from './components/Competences.vue';
+import Formation from './components/Formation.vue';
+import Realisations from './components/Realisations.vue';
+import Contact from './components/Contact.vue';
+
 
 const projets = [{ id: 1, titre: 'Mon premier projet' },{ id: 2, titre: 'Mon deuxième projet' }]
+const competences = {
+  langages: ['Java', 'Python', 'SQL', 'HTML/CSS', 'JavaScript'],
+  backend: ['Node.js', 'Express', 'Socket.IO'],
+  baseDeDonnees: ['PostgreSQL'],
+  deploiement: ['Nginx', 'PM2', 'VPS OVH']
+};
+
+
 
 </script>
 
@@ -11,9 +22,9 @@ const projets = [{ id: 1, titre: 'Mon premier projet' },{ id: 2, titre: 'Mon deu
   <div class="boules"></div>
   <main>
     <Accueil />
-    <Competences />
+    <Competences :competences="competences" />
     <Formation />
-    <Realisations />
+    <Realisations :projets="projets" />
     <Contact />
   </main>
 </template>
