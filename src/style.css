@@ -1,0 +1,82 @@
+/* src/style.css */
+
+/* Définition de notre palette de couleurs, inspirée de si-chat */
+:root {
+  --couleur-fond: #1c1c1e;        /* Fond sombre */
+  --couleur-texte: #f0f0f0;       /* Texte principal clair */
+  --couleur-accent: var(--couleur-texte);
+  --couleur-texte-secondaire: #a0a0a0; /* Pour les sous-titres */
+}
+
+/* Styles de base pour toute la page */
+body {
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mise en page principale */
+#app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Styles pour les titres */
+h1, h2 {
+  color: var(--couleur-accent); /* On utilise la couleur d'accent pour les titres */
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--couleur-accent); /* On ajoute une ligne sous les titres de section */
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+
+/* Style pour les liens */
+a {
+  color: var(--couleur-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* SURPRISE MODE (landing) */
+
+/* Fond animé doux (dégradé mouvant) */
+body {
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(29,78,216,.20), transparent 60%),
+    radial-gradient(1000px 500px at 110% 10%, rgba(99,102,241,.18), transparent 60%),
+    linear-gradient(180deg, #0b1020 0%, #0a0f1e 100%);
+  overflow-x: hidden;
+}
+
+/* Boules lumineuses (derrière le contenu) */
+.boules {
+  position: fixed; inset: -20vmax;
+  pointer-events: none; z-index: -1;
+  filter: blur(40px) saturate(120%);
+  background:
+    radial-gradient(closest-side, rgba(56,189,248,.18), transparent 80%) 20% 30%/35vmax 35vmax no-repeat,
+    radial-gradient(closest-side, rgba(99,102,241,.22), transparent 80%) 80% 20%/45vmax 45vmax no-repeat,
+    radial-gradient(closest-side, rgba(29,78,216,.22), transparent 80%) 60% 80%/40vmax 40vmax no-repeat;
+  animation: boules-move 18s ease-in-out infinite alternate;
+}
+@keyframes boules-move {
+  0%   { transform: translateY(-2%) scale(1); }
+  100% { transform: translateY(2%)  scale(1.03); }
+}
