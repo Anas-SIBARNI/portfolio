@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Navbar from './components/Navbar.vue';
 import Accueil from './components/Accueil.vue';
 import Competences from './components/Competences.vue';
 import Formation from './components/Formation.vue';
@@ -33,12 +34,13 @@ const formations = [
 
 <template>
   <div class="boules"></div>
+  <Navbar />
   <main>
-    <Accueil />
-    <Competences :competences="competences" />
-    <Formation :formations="formations"/>
-    <Realisations :projets="projets" />
-    <Contact />
+    <Accueil id="accueil" />
+    <Competences id="competences" :competences="competences" />
+    <Formation id="formation" :formations="formations" />
+    <Realisations id="realisations" :projets="projets" />
+    <Contact id="contact" />
   </main>
 </template>
 <style>
