@@ -14,7 +14,20 @@ const competences = {
   deploiement: ['Nginx', 'PM2', 'VPS OVH']
 };
 
-
+const formations = [
+  { 
+    id: 1,
+    annee: "2024 - Aujourd'hui",
+    titre: "Bachelor Universitaire de Technologie - Informatique",
+    etablissement: "Université de Lille - Villeneuve d'Ascq"
+  },
+  { 
+    id: 2,
+    annee: "Juillet 2024",
+    titre: "Baccalauréat Général (Mention Bien)",
+    etablissement: "Lycée Gustave Eiffel - Armentières"
+  }
+];
 
 </script>
 
@@ -23,7 +36,7 @@ const competences = {
   <main>
     <Accueil />
     <Competences :competences="competences" />
-    <Formation />
+    <Formation :formations="formations"/>
     <Realisations :projets="projets" />
     <Contact />
   </main>
