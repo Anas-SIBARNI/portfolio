@@ -19,28 +19,27 @@ const menuOuvert = ref(false);
 <style scoped>
 /* --- Style de la barre "Pilule" --- */
 .navbar {
+  /* Position */
   position: fixed;
   top: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 1.5rem; /* barre à droite */
   z-index: 100;
-  
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 999px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-  padding: 0.5rem;
 }
 
 .menu-hamburger {
-  display: block; /* Visible sur mobile */
-  font-size: 1.5rem;
+  display: block;
+  font-size: 1.8rem;
   background: none;
   border: none;
   color: var(--couleur-texte);
   cursor: pointer;
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem; /* Zone de clic plus grande */
+  border-radius: 8px; /* Bords arrondis pour l'effet de survol */
+  transition: background-color 0.2s ease;
+}
+
+.menu-hamburger:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 
