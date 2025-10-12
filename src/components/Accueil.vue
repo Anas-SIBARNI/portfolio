@@ -12,8 +12,13 @@
         En 2ème année de BUT Informatique, je suis à la recherche d'un stage de 8 à 10 semaines à partir d'avril 2026 et d'une alternance pour ma 3ème année.
       </p>
       <div class="liens-sociaux">
-        <a href="https://github.com/Anas-SIBARNI" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/anas-sibarni/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Anas-SIBARNI" target="_blank">
+          <img with="50" height="50"  src="/src/assets/GitHub_Logo_White.png" />
+
+        </a>
+        <a href="https://www.linkedin.com/in/anas-sibarni/" target="_blank">
+            <img with="50" height="50"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+        </a>
       </div>
     </div>
   </section>
@@ -55,7 +60,7 @@
 
 .liens-sociaux a {
   margin: 0 0.5rem;
-  padding: 0.8rem 1rem;
+  padding: 1rem;
   border-radius: 12px;
   font-weight: 600;
   text-decoration: none;

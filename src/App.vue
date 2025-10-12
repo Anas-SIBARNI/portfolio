@@ -23,13 +23,13 @@ const projets = [
   {
     id: 3,
     titre: 'FlexiPass - Gestionnaire de mot de passe',
-    description: 'Générateur de mots de passe personnalisables avec copie dans le presse-papiers et enregistrement sécurisé.',
+    description: 'Générateur de mots de passe personnalisables avec copie dans le presse-papiers et enregistrement.',
     technologies: ['Python', 'CustomTkinter', 'Pyperclip']
   },
   {
     id: 4,
     titre: 'Sirtet - Jeu de briques dans un terminal',
-    description: 'Jeu de briques en temps réel développé en équipe de 5 jours selon la méthode agile, avec sauvegarde des scores.',
+    description: 'Jeu de briques en temps réel développé en équipe selon la méthode agile, avec sauvegarde des scores.',
     technologies: ['Java', 'Lanterna']
   }
 ];
