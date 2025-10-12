@@ -36,6 +36,10 @@ body {
   100% { transform: translateY(2%)  scale(1.03); }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* 2. Styles de base Mobile-First */
 #app {
   /* Sur mobile, on veut que ça prenne toute la largeur, 
