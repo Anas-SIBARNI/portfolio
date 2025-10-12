@@ -140,17 +140,41 @@ const menuOuvert = ref(false);
   }
   
   .nav-links a {
+    position: relative; /*  positionner la ligne en dessous */
+    padding: 0.5rem 0; /* On ajuste le padding pour laisser de la place à la ligne */
+    margin: 0 1rem; /* On utilise une marge pour espacer les liens */
+
+    /* --- Style du texte (inchangé) --- */
     color: var(--couleur-texte);
     text-decoration: none;
     font-weight: 500;
-    border-radius: 999px;
-    transition: background-color 0.3s ease;
-    padding: 0.75rem 1.2rem;
     font-size: 0.9rem;
-  }
+    background-color: transparent;
 
   .nav-links a:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
+
+  .nav-links a::after {
+    content: ''; /* Obligatoire pour un pseudo-élément */
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--couleur-texte);
+    bottom: 0;
+    left: 0;
+    
+    transform: scaleX(0); /* La ligne est "écrasée" horizontalement */
+    transform-origin: bottom right;
+  }
+
+  transition: transform 0.3s ease-out;
+    }
+
+    /* --- Animation au survol --- */
+    .nav-links a:hover::after {
+      transform: scaleX(1); /* La ligne prend toute sa largeur */
+      transform-origin: bottom left; /* L'animation s'étend vers la gauche */
+    }
 }
 </style>
