@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ThemeSwitch from './components/ThemeSwitch.vue';
 import Navbar from './components/Navbar.vue';
 import Accueil from './components/Accueil.vue';
 import Competences from './components/Competences.vue';
@@ -67,12 +68,14 @@ const formations = [
   }
 ];
 
+
 </script>
 
 <template>
   <div class="boules"></div>
   <Navbar />
   <main>
+    <ThemeSwitch />
     <Accueil id="accueil" />
     <Competences id="competences" :competences="competences" />
     <Formation id="formation" :formations="formations" />

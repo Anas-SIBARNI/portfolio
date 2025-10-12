@@ -26,7 +26,6 @@ defineProps<{
     </div>
   </section>
 </template>
-
 <style scoped>
 /* =================================== */
 /* Styles de base (Mobile First)       */
@@ -35,7 +34,6 @@ defineProps<{
   padding: 2rem 0;
 }
 
-/* Grille pour les projets : 1 colonne sur mobile */
 .projets-grille {
   display: grid;
   grid-template-columns: 1fr;
@@ -43,10 +41,10 @@ defineProps<{
 }
 
 .projet-carte {
-  background-color: rgba(39, 39, 42, 0.7);
+  background-color: var(--couleur-surface-fond);
   padding: 1.5rem;
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--couleur-surface-bordure);
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
@@ -54,7 +52,7 @@ defineProps<{
 
 .projet-carte:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: var(--couleur-accent-action);
 }
 
 .projet-titre {
@@ -66,7 +64,7 @@ defineProps<{
 
 .projet-description {
   color: var(--couleur-texte-secondaire);
-  flex-grow: 1; /* Pousse la liste des technos en bas */
+  flex-grow: 1;
   margin: 0 0 1.5rem 0;
 }
 
@@ -80,7 +78,7 @@ defineProps<{
 }
 
 .tech-tag {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--couleur-tag-fond);
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
   font-size: 0.8rem;
@@ -91,7 +89,6 @@ defineProps<{
 /* Styles pour écrans plus grands (Desktop) */
 /* =================================== */
 @media (min-width: 769px) {
-  /* On passe à une grille de 2 colonnes */
   .projets-grille {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -15,16 +15,15 @@ defineProps(['formations'])
     </section>
   </template>
 
-
 <style scoped>
 /* =================================== */
 /* Styles de base (Mobile First)       */
 /* =================================== */
 .formation-item {
-  background-color: rgba(39, 39, 42, 0.7);
+  background-color: var(--couleur-surface-fond);
   padding: 1.5rem;
   border-radius: 10px;
-  border-left: 3px solid var(--couleur-accent); /* Ligne de style sur le côté */
+  border-left: 3px solid var(--couleur-accent);
   margin-bottom: 1.5rem;
 }
 
@@ -33,7 +32,7 @@ defineProps(['formations'])
   flex-wrap: wrap; 
   justify-content: space-between;
   align-items: baseline;
-  gap: 1rem; /* Espace entre le titre et l'année */
+  gap: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -41,7 +40,7 @@ defineProps(['formations'])
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--couleur-texte);
-  margin: 0; /* On enlève la marge par défaut du h3 */
+  margin: 0;
 }
 
 .annee {
@@ -66,7 +65,7 @@ defineProps(['formations'])
   }
   .formation-item:hover {
     transform: translateY(-5px);
-    background-color: rgba(50, 50, 50, 0.9);
+    background-color: var(--couleur-surface-survol-fond);
   }
 }
 </style>

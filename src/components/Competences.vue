@@ -36,7 +36,6 @@ function formatCategorie(categorieName: string | number): string {
     </div>
   </section>
 </template>
-
 <style scoped>
 .competences-section {
   padding: 2rem 0;
@@ -62,8 +61,8 @@ function formatCategorie(categorieName: string | number): string {
 }
 
 .block {
-  background-color: rgba(39, 39, 42, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: var(--couleur-surface-fond);
+  border: 1px solid var(--couleur-surface-bordure);
   border-radius: 10px;
   padding: 0.8rem 1.2rem;
   font-weight: 500;
@@ -75,8 +74,8 @@ function formatCategorie(categorieName: string | number): string {
 
 .block:hover {
   transform: translateY(-5px);
-  background-color: rgba(50, 50, 50, 0.9);
-  border-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--couleur-surface-survol-fond);
+  border-color: var(--couleur-surface-survol-bordure);
 }
 
 .block img {
