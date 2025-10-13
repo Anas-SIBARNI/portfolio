@@ -8,6 +8,8 @@
   --couleur-surface-fond: rgba(255, 255, 255, 0.4);
   --couleur-surface-bordure: rgba(0, 0, 0, 0.1);
   --couleur-tag-fond: rgba(0, 0, 0, 0.05);
+  --couleur-overlay-fond: rgba(255, 255, 255, 0.8);
+  --couleur-ombre: rgba(0, 0, 0, 0.15);
 }
 
 /* Thème Sombre */
@@ -20,6 +22,8 @@ body.dark-theme {
   --couleur-surface-fond: rgba(39, 39, 42, 0.7);
   --couleur-surface-bordure: rgba(255, 255, 255, 0.08);
   --couleur-tag-fond: rgba(255, 255, 255, 0.1);
+  --couleur-overlay-fond: rgba(11, 16, 32, 0.95);
+  --couleur-ombre: rgba(0, 0, 0, 0.2);
 }
 
 html {
