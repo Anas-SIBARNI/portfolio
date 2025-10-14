@@ -32,6 +32,12 @@ const projets = [
     titre: 'Sirtet - Jeu de briques dans un terminal',
     description: 'Jeu de briques en temps réel développé en équipe selon la méthode agile, avec sauvegarde des scores.',
     technologies: ['Java', 'Lanterna']
+  },
+  {
+    id: 5,
+    titre: 'Portfolio - Mon portfolio que vous voyez actuellement',
+    description: 'Présentation de qui je suis, qu\'est-ce que j\'ai fait, qu\'est-ce que je sais faire, formulaire de contact. Utilisation d\'une technologie (Vue.js) qu\'on ne nouos enseigne pas en cours !',
+    technologies: ['Vue.js', 'Typescript', 'HTML5', 'CSS3']
   }
 ];
 const competences = {
@@ -50,6 +56,10 @@ const competences = {
   deploiement: [
     { nom: 'Nginx', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg' },
     { nom: 'PM2', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pm2/pm2-original.svg' }
+  ],
+  depots: [
+    { nom:'Gitlab', logo: null},
+    { nom:'Github', logo: null},
   ]
 };
 
@@ -84,10 +94,5 @@ const formations = [
   </main>
 </template>
 <style>
-
-main {
-  max-width: 800px;
-  margin: 0 auto;
-}
 
 </style>

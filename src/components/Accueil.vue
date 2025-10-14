@@ -151,12 +151,12 @@ async function copierEmail() {
     justify-content: center;
     align-items: center;
     position: relative;
-    min-height: 400px;
+    min-height: 700px;
   }
   .photo-container img {
     display: block;
-    width: 320px;
-    height: 320px;
+    width: 450px;
+    height: 450px;
     object-fit: cover;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
@@ -181,17 +181,17 @@ async function copierEmail() {
   
   .liens-sociaux {
     position: absolute;
-    bottom: 20px;
+    bottom: 100px;
     left: 10px;
-    width: 220px;
-    height: 120px;
+    width: 320px;
+    height: 200px;
     display: block;
   }
 
   .lien {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     padding: 0;
     border-radius: 50%;
     border-width: 2px;
@@ -205,12 +205,12 @@ async function copierEmail() {
   }
 
   .lien svg {
-    width: 28px;
-    height: 28px;
+    width: 50px;
+    height: 50px;
   }
   .icone-container {
-    width: 28px;
-    height: 28px;
+    width: 50px;
+    height: 50px;
   }
   .icone {
     top: 0;

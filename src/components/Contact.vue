@@ -21,24 +21,8 @@
             <button type="submit" class="btn-submit">Envoyer</button>
         </form>
     </section>
-</template><style scoped>
-.contact-section {
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.contact-section h2 {
-  margin-bottom: 2rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
+</template>
+<style scoped>
 
 .form-group {
   display: flex;

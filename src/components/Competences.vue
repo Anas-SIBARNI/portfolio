@@ -14,6 +14,8 @@ function formatCategorie(categorieName: string | number): string {
       return categorieName.replace('deploiement', 'Déploiement');
     } else if(categorieName == "langages"){
       return categorieName.replace('langages', 'Langages');
+    } else if(categorieName == "depots"){
+      return categorieName.replace('depots', 'Dépôts');
     } 
   }
   return String(categorieName);
