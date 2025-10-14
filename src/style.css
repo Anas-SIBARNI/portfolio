@@ -40,8 +40,14 @@ body {
 
 #app {
   width: 100%;
-  padding: 1.5rem 15rem;
+  padding: 1.5rem;
   box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  #app{
+    padding: 1.5rem 15em;
+  }
 }
 
 h1, h2 {

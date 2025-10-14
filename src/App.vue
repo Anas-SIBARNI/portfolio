@@ -82,7 +82,6 @@ const formations = [
 </script>
 
 <template>
-  <div class="boules"></div>
   <Navbar />
   <main>
     <ThemeSwitch />
