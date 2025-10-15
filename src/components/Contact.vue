@@ -63,6 +63,7 @@
   text-decoration: none;
   transition: all .25s ease;
   cursor: pointer;
+  margin-top: 5px;
   
   border: 2px solid var(--couleur-surface-bordure);
   background: var(--couleur-surface-fond);

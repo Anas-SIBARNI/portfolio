@@ -23,8 +23,9 @@ async function copierEmail() {
       <p class="sous-titre">Étudiant en Informatique - Conception d'Application</p>
       <h1 class="nom">Anas Sibarni</h1>
       <p class="accroche">
-        En 2ème année de BUT Informatique, je suis à la recherche d'un stage de 8 à 10 semaines à partir d'avril 2026 et d'une alternance pour ma 3ème année.
+        Actuellement en recherche active d'un stage (8-10 semaines, dès avril 2026) et d'une alternance pour ma 3ème année de BUT Informatique.
       </p>
+      <a href="/cv_Anas_SIBARNI.pdf" download class="btn-cta">Téléchargez mon CV !</a>
     </div>
 
     <div class="photo-container">
@@ -82,13 +83,14 @@ async function copierEmail() {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-}.lien {
+}
+.lien {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem; /* Un peu plus d'espace */
-  padding: 0.9rem 1.4rem; /* Un peu plus grand */
-  border-radius: 14px; /* Un peu plus arrondi */
+  gap: 0.8rem;
+  padding: 0.9rem 1.4rem;
+  border-radius: 14px;
   font-weight: 600;
   text-decoration: none;
   transition: .25s ease;
@@ -128,15 +130,32 @@ async function copierEmail() {
   transform: scale(0);
   opacity: 0;
 }
+.btn-cta {
+  display: inline-block;
+  background-color: var(--couleur-accent);
+  color: var(--couleur-fond);
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px -10px var(--couleur-accent);
+  margin-bottom: 2.5rem; /* Espace avant les liens sociaux sur mobile */
+}
+.btn-cta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px -8px var(--couleur-accent);
+}
 
 @media (min-width: 992px) {
   .accueil-section {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     align-items: center;
     text-align: left;
-    gap: 2rem;
-    min-height: 80vh;
+    gap: 3rem;
+    min-height: 90vh;
   }
   .contenu {
     display: flex;
@@ -144,19 +163,29 @@ async function copierEmail() {
     align-items: flex-start;
   }
   .accroche {
-    margin: 0;
+    margin: 0 0 2.5rem 0; /* Espace pour le bouton CTA */
+  }
+  .nom {
+    color: var(--couleur-accent);
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .sous-titre {
+    margin-bottom: 1rem;
   }
   .photo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    min-height: 700px;
+    min-height: auto;
+    width: 100%;
+    height: 100%;
   }
   .photo-container img {
     display: block;
-    width: 450px;
-    height: 450px;
+    width: 380px;
+    height: 380px;
     object-fit: cover;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
@@ -166,69 +195,131 @@ async function copierEmail() {
   .photo-container:hover img {
     border-radius: 50%;
   }
-
-  @keyframes blob-morph {
-    0% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-    50% {
-      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
-    100% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-  }
   
-  .liens-sociaux {
-    position: absolute;
-    bottom: 100px;
-    left: 10px;
-    width: 320px;
-    height: 200px;
-    display: block;
-  }
+@keyframes blob-morph {
 
-  .lien {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    padding: 0;
-    border-radius: 50%;
-    border-width: 2px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease-out;
-  }
+0% {
 
-  .lien:hover {
-    transform: scale(1.15) !important;
-    z-index: 10;
-  }
+border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 
-  .lien svg {
-    width: 50px;
-    height: 50px;
-  }
-  .icone-container {
-    width: 50px;
-    height: 50px;
-  }
-  .icone {
-    top: 0;
-    left: 0;
-  }.lien:nth-child(1) { /* GitHub */
-    bottom: 20%;
-    left: -8%; /* On le décale plus à gauche */
-    transform: rotate(-15deg);
-  }
-  .lien:nth-child(2) { /* LinkedIn */
-    bottom: -5%; /* On le décale vers le bas */
-    left: 8%;
-    transform: rotate(5deg);
-  }
-  .lien:nth-child(3) { /* Email */
-    bottom: -15%; /* On le décale encore plus bas */
-    left: 28%;
-    transform: rotate(15deg);
-  }
+}
+
+50% {
+
+border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+
+}
+
+100% {
+
+border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+
+}
+
+}
+
+
+.liens-sociaux {
+
+position: absolute;
+
+bottom: 100px;
+
+left: 10px;
+
+width: 320px;
+
+height: 200px;
+
+display: block;
+
+}
+
+
+
+.lien {
+
+position: absolute;
+
+width: 90px;
+
+height: 90px;
+
+padding: 0;
+
+border-radius: 50%;
+
+border-width: 2px;
+
+box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+transition: transform 0.3s ease-out;
+
+}
+
+
+
+.lien:hover {
+
+transform: scale(1.15) !important;
+
+z-index: 10;
+
+}
+
+
+
+.lien svg {
+
+width: 50px;
+
+height: 50px;
+
+}
+
+.icone-container {
+
+width: 50px;
+
+height: 50px;
+
+}
+
+.icone {
+
+top: 0;
+
+left: 0;
+
+}.lien:nth-child(1) { /* GitHub */
+
+bottom: 20%;
+
+left: -11%; /* On le décale plus à gauche */
+
+transform: rotate(-15deg);
+
+}
+
+.lien:nth-child(2) { /* LinkedIn */
+
+bottom: -5%; /* On le décale vers le bas */
+
+left: 10%;
+
+transform: rotate(5deg);
+
+}
+
+.lien:nth-child(3) { /* Email */
+
+bottom: -15%; /* On le décale encore plus bas */
+
+left: 35%;
+
+transform: rotate(15deg);
+
+}
+
 }
 </style>

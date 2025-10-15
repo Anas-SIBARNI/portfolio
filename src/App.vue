@@ -12,19 +12,19 @@ const projets = [
   {
     id: 1,
     titre: 'si-chat.app - Messagerie web en temps réel',
-    description: "Application de messagerie avec authentification, discussions privées/groupes, profils avec photo, et persistance des messages.",
+    description: "Application de messagerie avec authentification, discussions privées/groupes, profils avec photo, et persistance des messages. (Vibe coding)",
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Express', 'Socket.IO', 'PostgreSQL', 'Nginx']
   },
   {
     id: 2,
     titre: 'Bumpless - Jeu de combat de chars',
-    description: 'Jeu en 1v1 en temps réel avec système de bonus/malus, collisions, classement des scores et persistance simple en CSV.',
+    description: 'Jeu en 1v1 en temps réel avec système de bonus/malus, collisions, classement des scores et persistance simple en CSV. Avec interface graphique !',
     technologies: ['Python', 'Pygame', 'CSV', 'Pandas']
   },
   {
     id: 3,
     titre: 'FlexiPass - Gestionnaire de mot de passe',
-    description: 'Générateur de mots de passe personnalisables avec copie dans le presse-papiers et enregistrement.',
+    description: 'Logiciel d\'un générateur de mots de passe personnalisable, avec copie dans le presse-papiers et enregistrement.',
     technologies: ['Python', 'CustomTkinter', 'Pyperclip']
   },
   {
@@ -35,19 +35,20 @@ const projets = [
   },
   {
     id: 5,
-    titre: 'Portfolio - Mon portfolio que vous voyez actuellement',
-    description: 'Présentation de qui je suis, qu\'est-ce que j\'ai fait, qu\'est-ce que je sais faire, formulaire de contact. Utilisation d\'une technologie (Vue.js) qu\'on ne nouos enseigne pas en cours !',
-    technologies: ['Vue.js', 'Typescript', 'HTML5', 'CSS3']
+    titre: 'Portfolio - (ce site)',
+    description: 'Plateforme web pour présenter mon profil et mes projets. Ce portfolio a été développé avec Vue.js, un framework appris en dehors de mon cursus universitaire, démontrant ainsi ma curiosité et ma capacité à m\'approprier rapidement de nouvelles technologies. (Un peu de Vibe coding)',
+    technologies: ['Vue.js', 'Vite', 'Typescript', 'HTML5', 'CSS3']
   }
 ];
 const competences = {
   langages: [
-    { nom: 'Java', logo: null },
+    { nom: 'Java', logo: 'https://dev.java/assets/images/java-affinity-logo-icode-lg.png' },
     { nom: 'Python', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
-    { nom: 'C', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg' },
-    { nom: 'SQL', logo: null },
+    //{ nom: 'C', logo: 'src/assets/c.svg'},
+    { nom: 'SQL', logo: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
     { nom: 'HTML5', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
     { nom: 'CSS3', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
+    { nom: 'Vue.js', logo: '/src/assets/vue.svg' }
   ],
   baseDeDonnees: [
     { nom: 'PostgreSQL', logo: null },
@@ -67,17 +68,16 @@ const formations = [
   { 
     id: 1,
     annee: "2024 - Aujourd'hui",
-    titre: "Bachelor Universitaire de Technologie - Informatique",
+    titre: "Bachelor Universitaire de Technologie - Informatique - Parcours réalisation d'applications",
     etablissement: "Université de Lille - Villeneuve d'Ascq"
   },
   { 
     id: 2,
     annee: "Juillet 2024",
-    titre: "Baccalauréat Général (Mention Bien)",
+    titre: "Baccalauréat Général - Section européenne (Anglais) - Mention Bien",
     etablissement: "Lycée Gustave Eiffel - Armentières"
   }
 ];
-
 
 </script>
 
