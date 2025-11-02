@@ -29,35 +29,40 @@ const projets = [
     titre: 'si-chat.app - Messagerie web en temps réel',
     description: "Application de messagerie avec authentification, discussions privées/groupes, profils avec photo, et persistance des messages.",
     outils: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Express', 'Socket.IO', 'PostgreSQL', 'Nginx', 'Vibe Coding'],
-    image: siChatImg
+    image: siChatImg,
+    githubUrl: 'https://github.com/Anas-SIBARNI/si-chat' 
   },
   {
     id: 2,
     titre: 'Bumpless - Jeu de combat de chars',
     description: 'Jeu en 1v1 en temps réel avec système de bonus/malus, collisions, classement des scores et persistance simple en CSV. Avec interface graphique !',
     outils: ['Python', 'Pygame', 'CSV', 'Pandas'],
-    image: bumplessImg
+    image: bumplessImg,
+    githubUrl: 'https://github.com/Anas-SIBARNI/Bumpless' 
   },
   {
     id: 3,
     titre: 'FlexiPass - Gestionnaire de mot de passe',
     description: 'Logiciel d\'un générateur de mots de passe personnalisable, avec copie dans le presse-papiers et enregistrement.',
     outils: ['Python', 'CustomTkinter', 'Pyperclip'],
-    image: flexipassImg
+    image: flexipassImg,
+    githubUrl: 'https://github.com/Anas-SIBARNI/FlexiPass'
   },
   {
     id: 4,
     titre: 'Sirtet - Jeu de briques dans un terminal',
     description: 'Jeu de briques en temps réel développé en équipe selon la méthode agile, avec sauvegarde des scores.',
     outils: ['Java', 'Lanterna'],
-    image: sirtetImg
+    image: sirtetImg,
+    githubUrl: 'https://github.com/Anas-SIBARNI/Sirtet' 
   },
   {
     id: 5,
     titre: 'Portfolio - (ce site)',
-    description: 'Plateforme web pour présenter mon profil et mes projets. Ce portfolio a été développé avec Vue.js, un framework appris en dehors de mon cursus universitaire, démontrant ainsi ma curiosité et ma capacité à m\'approprier rapidement de nouvelles technologies',
+    description: 'Plateforme web pour présenter mon profil et mes projets. Ce portfolio a été développé avec Vue.js, un framework appris en dehors de mon cursus universitaire...',
     outils: ['Vue.js', 'Vite', 'Typescript', 'HTML5', 'CSS3', 'Vibe Coding'],
-    image: null 
+    image: null,
+    githubUrl: 'https://github.com/Anas-SIBARNI/portfolio'
   }
 ];
 const competences = {

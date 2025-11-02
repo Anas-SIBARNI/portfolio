@@ -6,6 +6,7 @@ defineProps<{
     description: string;
     outils: string[];
     image: string | null;
+    githubUrl: string;
   }[]
 }>()
 </script>
@@ -14,7 +15,15 @@ defineProps<{
   <section class="realisations-section">
     <h2>Réalisations</h2>
     <div class="projets-grille">
-      <div v-for="projet in projets" :key="projet.id" class="projet-block">
+      
+      <a 
+        v-for="projet in projets" 
+        :key="projet.id" 
+        :href="projet.githubUrl"
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="projet-block"
+      >
         
         <img 
           v-if="projet.image" 
@@ -32,8 +41,7 @@ defineProps<{
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </a> </div>
   </section>
 </template>
 
@@ -55,7 +63,11 @@ defineProps<{
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Pour que l'image respecte le border-radius */
+  overflow: hidden;
+
+  /* enlever l'apparence de lien par défaut */
+  text-decoration: none;
+  color: var(--couleur-texte); 
 }
 
 .projet-block:hover {
@@ -63,11 +75,10 @@ defineProps<{
   border-color: var(--couleur-accent-action);
 }
 
-/* --- NOUVEAU STYLE POUR L'IMAGE --- */
 .projet-image {
   width: 100%;
-  aspect-ratio: 16 / 9; /* Garde un format 16:9 */
-  object-fit: cover; /* S'assure que l'image couvre la zone */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-bottom: 1px solid var(--couleur-surface-bordure);
 }
 
@@ -75,7 +86,7 @@ defineProps<{
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Permet au contenu de s'étendre */
+  flex-grow: 1;
 }
 
 .projet-titre {
