@@ -20,306 +20,324 @@ async function copierEmail() {
 <template>
   <section class="accueil-section">
     <div class="contenu">
-      <p class="sous-titre">Étudiant en Informatique - Conception d'Application</p>
       <h1 class="nom">Anas Sibarni</h1>
+
+      <h2 class="role-titre">Étudiant Développeur Full-Stack</h2>
       <p class="accroche">
         Actuellement en recherche active d'un stage (8-10 semaines, dès avril 2026) et d'une alternance pour ma 3ème année de BUT Informatique.
       </p>
-      <a href="/cv_Anas_SIBARNI.pdf" download class="btn-cta">Téléchargez mon CV !</a>
-    </div>
+      
+      <a href="/cv_Anas_SIBARNI.pdf" download class="btn-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Télécharger mon CV
+      </a>
+      
+      <div class="separateur">
+      </div>
 
-    <div class="photo-container">
-      <img src="/src/assets/photo-fond-transparent.png" alt="Photo de Anas Sibarni" />
       <div class="liens-sociaux">
-        <a href="https://github.com/Anas-SIBARNI" target="_blank" class="lien" aria-label="GitHub">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        
+        <a href="https://github.com/Anas-SIBARNI" target="_blank" class="lien lien-logo-seul" aria-label="GitHub">
+          <img src="/src/assets/logos/GitHub_Logo.png" alt="Logo GitHub" class="logo-social logo-light">
+          <img src="/src/assets/logos/GitHub_Logo_White.png" alt="Logo GitHub" class="logo-social logo-dark">
         </a>
-        <a href="https://www.linkedin.com/in/anas-sibarni/" target="_blank" class="lien" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        
+        <a href="https://www.linkedin.com/in/anas-sibarni/" target="_blank" class="lien lien-logo-seul" aria-label="LinkedIn">
+          <img src="/src/assets/logos/LI-Logo.png" alt="Logo LinkedIn" class="logo-social">
         </a>
-        <button @click="copierEmail" class="lien" aria-label="Copier l'email">
-          <div class="icone-container">
-            <svg :class="{ 'icone-active': !estCopie }" class="icone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <svg :class="{ 'icone-active': estCopie }" class="icone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
+
+        <button @click="copierEmail" class="lien lien-email" aria-label="Copier l'email">
+          <span class="icone-container">
+            <svg :class="{ 'icone-active': !estCopie }" class="icone icone-mail" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <svg :class="{ 'icone-active': estCopie }" class="icone icone-check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span class="texte-email">{{ estCopie ? 'Copié !' : 'Email' }}</span>
         </button>
       </div>
     </div>
+
+    <div class="photo-container">
+      <div class="photo-decoration"></div>
+      <img src="/src/assets/photo-fond-transparent.png" alt="Photo de Anas Sibarni" />
+    </div>
   </section>
 </template>
-
 <style scoped>
 .accueil-section {
-  min-height: 90vh; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-}
-.photo-container img {
-  display: none;
-}
-.nom {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
-}
-.sous-titre {
-  font-size: 1.1rem;
-  color: var(--couleur-texte-secondaire);
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-.accroche {
-  max-width: 500px;
-  margin: 0 auto 2rem auto;
-  color: var(--couleur-texte-secondaire);
-}
-.liens-sociaux {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.lien {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
-  padding: 0.9rem 1.4rem;
-  border-radius: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: .25s ease;
-  border: 1px solid var(--couleur-surface-bordure);
-  background: var(--couleur-surface-fond);
-  color: var(--couleur-texte);
-  font-family: inherit;
-  font-size: 1rem;
-  cursor: pointer;
-}
-.lien:hover {
-  border-color: var(--couleur-accent-action);
-  transform: scale(1.1);
-}
-.lien svg {
-  width: 20px;
-  height: 20px;
-  stroke: var(--couleur-texte);
-}
-.icone-container {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.icone {
-  position: absolute;
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-}
-.icone.icone-active {
-  transform: scale(1);
-  opacity: 1;
-}
-.icone:not(.icone-active) {
-  transform: scale(0);
-  opacity: 0;
-}
-.btn-cta {
-  display: inline-block;
-  background-color: var(--couleur-accent);
-  color: var(--couleur-fond);
-  padding: 1rem 2.5rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 10px 30px -10px var(--couleur-accent);
-  margin-bottom: 2.5rem; /* Espace avant les liens sociaux sur mobile */
-}
-.btn-cta:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px -8px var(--couleur-accent);
-}
-
-@media (min-width: 992px) {
-  .accueil-section {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    align-items: center;
-    text-align: left;
-    gap: 3rem;
     min-height: 90vh;
-  }
-  .contenu {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
-  .accroche {
-    margin: 0 0 2.5rem 0; /* Espace pour le bouton CTA */
-  }
-  .nom {
-    color: var(--couleur-accent);
-    font-size: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.photo-container img {
+    display: none;
+}
+
+.nom {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+}
+
+.role-titre {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--couleur-texte);
+    margin-top: 0;
     margin-bottom: 1.5rem;
-  }
-  .sous-titre {
-    margin-bottom: 1rem;
-  }
-  .photo-container {
+}
+
+.sous-titre {
+    font-size: 1.1rem;
+    color: var(--couleur-texte-secondaire);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.accroche {
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+    color: var(--couleur-texte-secondaire);
+}
+
+.liens-sociaux {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    min-height: auto;
-    width: 100%;
-    height: 100%;
-  }
-  .photo-container img {
-    display: block;
-    width: 380px;
-    height: 380px;
-    object-fit: cover;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-    animation: blob-morph 15s ease-in-out infinite;
-    transition: all 0.5s ease-in-out;
-  }
-  .photo-container:hover img {
-    border-radius: 50%;
-  }
-  
-@keyframes blob-morph {
-
-0% {
-
-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-
+    flex-wrap: wrap;
+    gap: 1rem;
 }
-
-50% {
-
-border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-
-}
-
-100% {
-
-border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-
-}
-
-}
-
-
-.liens-sociaux {
-
-position: absolute;
-
-bottom: 100px;
-
-left: 10px;
-
-width: 320px;
-
-height: 200px;
-
-display: block;
-
-}
-
-
 
 .lien {
-
-position: absolute;
-
-width: 90px;
-
-height: 90px;
-
-padding: 0;
-
-border-radius: 50%;
-
-border-width: 2px;
-
-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-
-transition: transform 0.3s ease-out;
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem; 
+    /* MODIFIÉ : Padding vertical de 1.5rem (24px) pour tous les boutons */
+    padding: 1.5rem 1.4rem;
+    border-radius: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    border: 1px solid var(--couleur-surface-bordure);
+    background: var(--couleur-surface-fond);
+    color: var(--couleur-texte);
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden; 
 }
-
-
 
 .lien:hover {
-
-transform: scale(1.15) !important;
-
-z-index: 10;
-
+    border-color: var(--couleur-accent-action);
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
-
-
-.lien svg {
-
-width: 50px;
-
-height: 50px;
-
+.lien::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: all 0.6s ease;
+    z-index: 0;
 }
+
+.lien:hover::before {
+    left: 100%;
+}
+
+.lien > * { 
+    position: relative;
+    z-index: 1;
+}
+
+.lien-logo-seul {
+    /* MODIFIÉ : Padding de 1.5rem partout pour respecter la guideline et être carré */
+    padding: 1.5rem;
+    gap: 0;
+}
+
+.logo-social {
+    height: 24px; 
+    width: auto;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
+
+.lien span, .lien svg {
+    color: var(--couleur-texte); 
+    stroke: var(--couleur-texte);
+}
+
 
 .icone-container {
-
-width: 50px;
-
-height: 50px;
-
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icone {
-
-top: 0;
-
-left: 0;
-
-}.lien:nth-child(1) { /* GitHub */
-
-bottom: 20%;
-
-left: -11%; /* On le décale plus à gauche */
-
-transform: rotate(-15deg);
-
+    position: absolute;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
-.lien:nth-child(2) { /* LinkedIn */
-
-bottom: -5%; /* On le décale vers le bas */
-
-left: 10%;
-
-transform: rotate(5deg);
-
+.icone.icone-active {
+    transform: scale(1);
+    opacity: 1;
 }
 
-.lien:nth-child(3) { /* Email */
-
-bottom: -15%; /* On le décale encore plus bas */
-
-left: 35%;
-
-transform: rotate(15deg);
-
+.icone:not(.icone-active) {
+    transform: scale(0);
+    opacity: 0;
 }
 
+.btn-cta {
+    display: inline-block;
+    background-color: var(--couleur-accent);
+    color: var(--couleur-fond);
+    padding: 1rem 2.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px -10px var(--couleur-accent);
+    margin-bottom: 2.5rem;
+}
+
+.btn-cta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px -8px var(--couleur-accent);
+}
+
+@media (min-width: 992px) {
+    .accueil-section {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+        min-height: 90vh;
+    }
+
+    .contenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accroche {
+        margin: 0 0 2.5rem 0;
+    }
+
+    .nom {
+        color: var(--couleur-accent);
+        font-size: 4.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .role-titre {
+        font-size: 1.5rem;
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+    }
+
+    .sous-titre {
+        margin-bottom: 1rem;
+    }
+
+    .photo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        min-height: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo-container img {
+        display: block;
+        width: 420px;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+        animation: blob-morph 15s ease-in-out infinite;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .photo-container:hover img {
+        border-radius: 50%;
+    }
+
+    @keyframes blob-morph {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        50% {
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        }
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    }
+
+    .separateur {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 0 2.5rem 0;
+        position: relative;
+    }
+    .separateur::before,
+      .separateur::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--couleur-surface-bordure), transparent);
+      }
+
+    .liens-sociaux {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+.logo-light {
+  display: block;
+}
+.logo-dark {
+  display: none;
+}
+
+:global(body.dark-theme) .logo-light {
+  display: none;
+}
+:global(body.dark-theme) .logo-dark {
+  display: block;
 }
 </style>

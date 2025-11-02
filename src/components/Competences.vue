@@ -6,19 +6,23 @@ defineProps<{
 }>()
 
 function formatCategorie(categorieName: string | number): string {
-  // contourner erreur categorie.replace(truc)
-  if (typeof categorieName === 'string') {
-    if(categorieName == "baseDeDonnees"){
-      return categorieName.replace('baseDeDonnees', 'Base de données');
-    } else if(categorieName == "deploiement"){
-      return categorieName.replace('deploiement', 'Déploiement');
-    } else if(categorieName == "langages"){
-      return categorieName.replace('langages', 'Langages');
-    } else if(categorieName == "depots"){
-      return categorieName.replace('depots', 'Dépôts');
-    } 
+  if (typeof categorieName !== 'string') {
+    return String(categorieName);
   }
-  return String(categorieName);
+
+  switch (categorieName) {
+    case 'baseDeDonnees':
+      return 'Base de données';
+    case 'deploiement':
+      return 'Déploiement';
+    case 'langages':
+      return 'Langages';
+    case 'depots':
+      return 'Dépôts';
+    default:
+      // Retourne le nom original s'il n'est pas dans la liste
+      return categorieName;
+  }
 }
 </script>
 
@@ -66,12 +70,14 @@ function formatCategorie(categorieName: string | number): string {
   background-color: var(--couleur-surface-fond);
   border: 1px solid var(--couleur-surface-bordure);
   border-radius: 10px;
-  padding: 0.8rem 1.2rem;
+  /* MODIFIÉ : Le padding est presque nul, sauf à droite pour le texte */
+  padding: 0 30px 0 0;
   font-weight: 500;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  /* MODIFIÉ : Le gap est supprimé car la marge de l'image s'en charge */
+  gap: 0;
 }
 
 .block:hover {
@@ -81,7 +87,9 @@ function formatCategorie(categorieName: string | number): string {
 }
 
 .block img {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
+  /* CONSERVÉ : Votre marge de 30px */
+  margin: 30px;
 }
 </style>

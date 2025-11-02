@@ -5,7 +5,7 @@ defineProps<{
     id: number;
     titre: string;
     description: string;
-    technologies: string[];
+    outils: string[];
   }[]
 }>()
 </script>
@@ -17,8 +17,8 @@ defineProps<{
       <div v-for="projet in projets" :key="projet.id" class="projet-carte">
         <h3 class="projet-titre">{{ projet.titre }}</h3>
         <p class="projet-description">{{ projet.description }}</p>
-        <ul class="technologies-liste">
-          <li v-for="tech in projet.technologies" :key="tech" class="tech-tag">
+        <ul class="outils-liste">
+          <li v-for="tech in projet.outils" :key="tech" class="tech-tag">
             {{ tech }}
           </li>
         </ul>
@@ -68,7 +68,7 @@ defineProps<{
   margin: 0 0 1.5rem 0;
 }
 
-.technologies-liste {
+.outils-liste {
   list-style: none;
   padding: 0;
   margin: 0;
