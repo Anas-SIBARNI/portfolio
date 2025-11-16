@@ -10,11 +10,13 @@ import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 
 // logos
-import pythonLogo from './assets/logos/py.png';
-import psqlLogo from './assets/logos/psql.png';
-import accessLogo from './assets/logos/ms-access.png';
-import jdbcLogo from './assets/logos/jdbc.png';
-import gitLogo from './assets/logos/git.png';
+import python from './assets/competences/py.png';
+import psql from './assets/competences/psql.png';
+import access from './assets/competences/ms-access.png';
+import jdbc from './assets/competences/jdbc.png';
+import git from './assets/competences/git.png';
+import docker from './assets/competences/docker.svg';
+import tomcat from './assets/competences/tomcat.jpg';
 
 // aperçus projets
 import siChatImg from './assets/screens-projects/si-chat.png';
@@ -68,7 +70,7 @@ const projets = [
 const competences = {
   langages: [
     { nom: 'Java', logo: 'https://dev.java/assets/images/java-affinity-logo-icode-lg.png' },
-    { nom: 'Python', logo: pythonLogo },
+    { nom: 'Python', logo: python },
     { nom: 'C', logo: 'https://icongr.am/devicon/c-original.svg?size=128&color=currentColor'},
     { nom: 'SQL', logo: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
     { nom: 'HTML5', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
@@ -76,16 +78,18 @@ const competences = {
     { nom: 'Vue.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg' }
   ],
   baseDeDonnees: [
-    { nom: 'PostgreSQL', logo: psqlLogo },
-    { nom: 'Microsoft Access', logo: accessLogo },
-    { nom: 'JDBC', logo: jdbcLogo }
+    { nom: 'PostgreSQL', logo: psql },
+    { nom: 'Microsoft Access', logo: access },
+    { nom: 'JDBC', logo: jdbc }
   ],
   deploiement: [
     { nom: 'Nginx', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg' },
-    { nom: 'PM2', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pm2/pm2-original.svg' }
+    { nom: 'PM2', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pm2/pm2-original.svg' },
+    { nom: 'Docker', logo: docker },
+    { nom: 'Tomcat', logo: tomcat }
   ],
   depots: [
-    { nom:'Git', logo: gitLogo },
+    { nom:'Git', logo: git },
   ]
 };
 

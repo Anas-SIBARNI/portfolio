@@ -42,12 +42,12 @@ async function copierEmail() {
       <div class="liens-sociaux">
         
         <a href="https://github.com/Anas-SIBARNI" target="_blank" class="lien lien-logo-seul" aria-label="GitHub">
-          <img src="/src/assets/logos/GitHub_Logo.png" alt="Logo GitHub" class="logo-social logo-light">
-          <img src="/src/assets/logos/GitHub_Logo_White.png" alt="Logo GitHub" class="logo-social logo-dark">
+          <img src="/src/assets/competences/GitHub_Logo.png" alt="Logo GitHub" class="logo-social logo-light">
+          <img src="/src/assets/competences/GitHub_Logo_White.png" alt="Logo GitHub" class="logo-social logo-dark">
         </a>
         
         <a href="https://www.linkedin.com/in/anas-sibarni/" target="_blank" class="lien lien-logo-seul" aria-label="LinkedIn">
-          <img src="/src/assets/logos/LI-Logo.png" alt="Logo LinkedIn" class="logo-social">
+          <img src="/src/assets/competences/LI-Logo.png" alt="Logo LinkedIn" class="logo-social">
         </a>
 
         <button @click="copierEmail" class="lien lien-email" aria-label="Copier l'email">
