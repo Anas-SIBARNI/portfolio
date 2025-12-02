@@ -68,16 +68,18 @@ const projets = [
   }
 ];
 const competences = {
-  langages: [
+  programmation: [
     { nom: 'Java', logo: 'https://dev.java/assets/images/java-affinity-logo-icode-lg.png' },
     { nom: 'Python', logo: python },
-    { nom: 'C', logo: 'https://icongr.am/devicon/c-original.svg?size=128&color=currentColor'},
-    { nom: 'SQL', logo: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
+    { nom: 'C', logo: 'https://icongr.am/devicon/c-original.svg?size=128&color=currentColor'}
+  ],
+  web: [
     { nom: 'HTML5', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
     { nom: 'CSS3', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
     { nom: 'Vue.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg' }
   ],
   baseDeDonnees: [
+    { nom: 'SQL', logo: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
     { nom: 'PostgreSQL', logo: psql },
     { nom: 'Microsoft Access', logo: access },
     { nom: 'JDBC', logo: jdbc }

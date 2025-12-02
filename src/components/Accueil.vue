@@ -24,7 +24,7 @@ async function copierEmail() {
 
       <h2 class="role-titre">Étudiant Développeur Full-Stack</h2>
       <p class="accroche">
-        Actuellement en recherche active d'un stage (8-10 semaines, dès avril 2026) et d'une alternance pour ma 3ème année de BUT Informatique.
+        Actuellement en recherche active d'un stage (10 semaines, dès avril 2026) et d'une alternance pour ma 3ème année de BUT Informatique.
       </p>
       
       <a href="/cv_Anas_SIBARNI.pdf" download class="btn-cta">

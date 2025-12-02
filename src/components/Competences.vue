@@ -15,12 +15,9 @@ function formatCategorie(categorieName: string | number): string {
       return 'Base de données';
     case 'deploiement':
       return 'Déploiement';
-    case 'langages':
-      return 'Langages';
     case 'depots':
       return 'Dépôts';
     default:
-      // Retourne le nom original s'il n'est pas dans la liste
       return categorieName;
   }
 }
