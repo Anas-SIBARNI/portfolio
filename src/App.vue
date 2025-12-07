@@ -23,11 +23,21 @@ import siChatImg from './assets/screens-projects/si-chat.png';
 import bumplessImg from './assets/screens-projects/bumpless.png';
 import flexipassImg from './assets/screens-projects/flexipass.png';
 import sirtetImg from './assets/screens-projects/sirtet.png';
+import mazyImg from './assets/screens-projects/mazy.png';
+import portfolioImg from './assets/screens-projects/portfolio.png';
 
 
 const projets = [
   {
     id: 1,
+    titre: 'Mazy - Jeu de labyrinthes procéduraux',
+    description: 'Jeu de labyrinthes 2D développé en équipe. Architecture MVC, principes SOLID (Clean Code) et campagne de tests unitaires.',
+    outils: ['Java', 'JavaFX', 'JUnit', 'Maven', 'Git'],
+    image: mazyImg, 
+    githubUrl: 'https://github.com/Anas-SIBARNI/mazy'
+  },
+  {
+    id: 2,
     titre: 'si-chat.app - Messagerie web en temps réel',
     description: "Application de messagerie avec authentification, discussions privées/groupes, profils avec photo, et persistance des messages.",
     outils: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Express', 'Socket.IO', 'PostgreSQL', 'Nginx', 'Vibe Coding'],
@@ -35,20 +45,12 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI/si-chat' 
   },
   {
-    id: 2,
+    id: 3,
     titre: 'Bumpless - Jeu de combat de chars',
     description: 'Jeu en 1v1 en temps réel avec système de bonus/malus, collisions, classement des scores et persistance simple en CSV. Avec interface graphique !',
     outils: ['Python', 'Pygame', 'CSV', 'Pandas'],
     image: bumplessImg,
     githubUrl: 'https://github.com/Anas-SIBARNI/Bumpless' 
-  },
-  {
-    id: 3,
-    titre: 'FlexiPass - Gestionnaire de mot de passe',
-    description: 'Logiciel d\'un générateur de mots de passe personnalisable, avec copie dans le presse-papiers et enregistrement.',
-    outils: ['Python', 'CustomTkinter', 'Pyperclip'],
-    image: flexipassImg,
-    githubUrl: 'https://github.com/Anas-SIBARNI/FlexiPass'
   },
   {
     id: 4,
@@ -60,10 +62,18 @@ const projets = [
   },
   {
     id: 5,
+    titre: 'FlexiPass - Gestionnaire de mot de passe',
+    description: 'Logiciel d\'un générateur de mots de passe personnalisable, avec copie dans le presse-papiers et enregistrement.',
+    outils: ['Python', 'CustomTkinter', 'Pyperclip'],
+    image: flexipassImg,
+    githubUrl: 'https://github.com/Anas-SIBARNI/FlexiPass'
+  },
+  {
+    id: 6,
     titre: 'Portfolio - (ce site)',
     description: 'Plateforme web pour présenter mon profil et mes projets. Ce portfolio a été développé avec Vue.js, un framework appris en dehors de mon cursus universitaire...',
     outils: ['Vue.js', 'Vite', 'Typescript', 'HTML5', 'CSS3', 'Vibe Coding'],
-    image: null,
+    image: portfolioImg,
     githubUrl: 'https://github.com/Anas-SIBARNI/portfolio'
   }
 ];
