@@ -5,7 +5,7 @@
   <footer class="site-footer">
     <div class="footer-content">
       <p class="availability">
-        En echerche active d'un stage et d'une alternance en développement d'applications.
+        En recherche active d'un stage et d'une alternance en développement d'applications.
       </p>
 
       <p class="contact-info">
