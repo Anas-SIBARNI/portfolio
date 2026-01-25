@@ -67,14 +67,27 @@ function formatCategorie(categorieName: string | number): string {
   background-color: var(--couleur-surface-fond);
   border: 1px solid var(--couleur-surface-bordure);
   border-radius: 10px;
-  /* MODIFIÉ : Le padding est presque nul, sauf à droite pour le texte */
-  padding: 0 30px 0 0;
+  /* On utilise un padding uniforme et une largeur min pour la cohérence */
+  padding: 30px; 
+  min-width: 100px; 
   font-weight: 500;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  /* MODIFIÉ : Le gap est supprimé car la marge de l'image s'en charge */
-  gap: 0;
+  /* On ne centre plus tout le contenu par le texte, 
+     mais on aligne les éléments entre eux */
+  justify-content: center; 
+}
+
+.block img {
+  /* On définit une zone fixe pour le logo */
+  width: 45px;
+  height: 45px;
+  /* Empêche la déformation tout en centrant l'image dans ses 40px */
+  object-fit: contain; 
+  margin-right: 1.5rem;
+  /* Assure que le logo reste bien au centre de sa zone de 40px */
+  display: block;
 }
 
 .block:hover {
@@ -83,10 +96,4 @@ function formatCategorie(categorieName: string | number): string {
   border-color: var(--couleur-surface-survol-bordure);
 }
 
-.block img {
-  height: 30px;
-  width: 30px;
-  /* CONSERVÉ : Votre marge de 30px */
-  margin: 30px;
-}
 </style>

@@ -12,19 +12,22 @@ import Footer from './components/Footer.vue';
 // logos
 import python from './assets/competences/py.png';
 import psql from './assets/competences/psql.png';
-import access from './assets/competences/ms-access.png';
 import jdbc from './assets/competences/jdbc.png';
 import git from './assets/competences/git.png';
 import docker from './assets/competences/docker.svg';
 import tomcat from './assets/competences/tomcat.jpg';
+import n8n from './assets/competences/n8n-white.png';
+
 
 // aperçus projets
-import siChatImg from './assets/screens-projects/si-chat.png';
 import bumplessImg from './assets/screens-projects/bumpless.png';
 import flexipassImg from './assets/screens-projects/flexipass.png';
 import sirtetImg from './assets/screens-projects/sirtet.png';
 import mazyImg from './assets/screens-projects/mazy.png';
 import portfolioImg from './assets/screens-projects/portfolio.png';
+import stockPro from './assets/screens-projects/stockpro.png';
+import clickme from './assets/screens-projects/clickme.png';
+
 
 
 const projets = [
@@ -38,14 +41,24 @@ const projets = [
   },
   {
     id: 2,
-    titre: 'si-chat.app - Messagerie web en temps réel',
-    description: "Application de messagerie avec authentification, discussions privées/groupes, profils avec photo, et persistance des messages.",
-    outils: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Express', 'Socket.IO', 'PostgreSQL', 'Nginx', 'Vibe Coding'],
-    image: siChatImg,
-    githubUrl: 'https://github.com/Anas-SIBARNI/si-chat' 
+    titre: 'StockPro - Landing page',
+    description: 'Développent d’une landing page statique pour un SaaS de gestion de stock qui n’existe pas encore',
+    outils: ['React', 'HTML', 'TypeScript', 'Tailwind CSS'],
+    image: stockPro,
+    galerie: [stockPro],
+    githubUrl: 'https://github.com/Anas-SIBARNI' 
   },
   {
     id: 3,
+    titre: 'ClickMe - Jeu de clique',
+    description: 'Jeu consistant à cliquer sur un bouton. Authentification, sauvegarde des scores, scoreboard via Supabase.',
+    outils: ['Angular','Supabase', 'TypeScript', 'Tailwind CSS', 'HTML'],
+    image: clickme,
+    galerie: [clickme],
+    githubUrl: 'https://github.com/Anas-SIBARNI' 
+  },
+  {
+    id: 4,
     titre: 'Bumpless - Jeu de combat de chars',
     description: 'Jeu en 1v1 en temps réel avec système de bonus/malus, collisions, classement des scores et persistance simple en CSV. Avec interface graphique !',
     outils: ['Python', 'Pygame', 'CSV', 'Pandas'],
@@ -53,7 +66,7 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI/Bumpless' 
   },
   {
-    id: 4,
+    id: 5,
     titre: 'Sirtet - Jeu de briques dans un terminal',
     description: 'Jeu de briques en temps réel développé en équipe selon la méthode agile, avec sauvegarde des scores.',
     outils: ['Java', 'Lanterna'],
@@ -61,7 +74,7 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI/Sirtet' 
   },
   {
-    id: 5,
+    id: 6,
     titre: 'FlexiPass - Gestionnaire de mot de passe',
     description: 'Logiciel d\'un générateur de mots de passe personnalisable, avec copie dans le presse-papiers et enregistrement.',
     outils: ['Python', 'CustomTkinter', 'Pyperclip'],
@@ -69,13 +82,16 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI/FlexiPass'
   },
   {
-    id: 6,
+    id: 7,
     titre: 'Portfolio - (ce site)',
     description: 'Plateforme web pour présenter mon profil et mes projets. Ce portfolio a été développé avec Vue.js, un framework appris en dehors de mon cursus universitaire...',
     outils: ['Vue.js', 'Vite', 'Typescript', 'HTML5', 'CSS3', 'Vibe Coding'],
     image: portfolioImg,
     githubUrl: 'https://github.com/Anas-SIBARNI/portfolio'
-  }
+  },
+
+  
+  
 ];
 const competences = {
   programmation: [
@@ -86,22 +102,29 @@ const competences = {
   web: [
     { nom: 'HTML5', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
     { nom: 'CSS3', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
-    { nom: 'Vue.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg' }
+    { nom: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg' },
+    { nom: 'Vue.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg' },
+    { nom: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
+    { nom: 'Angular', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg' },
+    { nom: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
+    { nom: 'BootStrap', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg' },
+    { nom: 'Vite', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg' }
   ],
   baseDeDonnees: [
     { nom: 'SQL', logo: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
     { nom: 'PostgreSQL', logo: psql },
-    { nom: 'Microsoft Access', logo: access },
-    { nom: 'JDBC', logo: jdbc }
+    { nom: 'JDBC', logo: jdbc },
+    { nom: 'Supabase', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg' }
   ],
-  deploiement: [
+  divers: [
     { nom: 'Nginx', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg' },
-    { nom: 'PM2', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pm2/pm2-original.svg' },
+    { nom: 'Tomcat', logo: tomcat },
     { nom: 'Docker', logo: docker },
-    { nom: 'Tomcat', logo: tomcat }
-  ],
-  depots: [
     { nom:'Git', logo: git },
+    { nom: 'n8n', logo: n8n},
+    { nom: 'IntelliJ', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg' },
+    { nom: 'VS Code', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg' }
+
   ]
 };
 
