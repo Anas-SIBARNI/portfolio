@@ -27,10 +27,19 @@ import mazyImg from './assets/screens-projects/mazy.png';
 import portfolioImg from './assets/screens-projects/portfolio.png';
 import stockPro from './assets/screens-projects/stockpro.png';
 import clickme from './assets/screens-projects/clickme.png';
+import bumpless2 from './assets/screens-projects/bumpless2.png';
 
 
 
 const projets = [
+  {
+    id: 0,
+    titre: 'Bumpless 2 - Jeu de tir multi-joueur',
+    description: 'Jeu de combat avec tanks, 2 modes solo et multi-joueur. Équipe de 3, git partagé multi-branch. Architecture Client/Serveur.',
+    outils: ['TypeScript', 'Node.js', 'HTML', 'CSS', 'Tailwind'],
+    image: bumpless2, 
+    githubUrl: 'https://github.com/Anas-SIBARNI/Bumpless-2'
+  },
   {
     id: 1,
     titre: 'Mazy - Jeu de labyrinthes procéduraux',
@@ -103,6 +112,8 @@ const competences = {
     { nom: 'HTML5', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
     { nom: 'CSS3', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
     { nom: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg' },
+    { nom: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg' },
+    { nom: 'Node.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg' },
     { nom: 'Vue.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg' },
     { nom: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
     { nom: 'Angular', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg' },
