@@ -4,9 +4,9 @@
 <template>
   <footer class="site-footer">
     <div class="footer-content">
-      <p class="availability">
+      <!-- <p class="availability">
         En recherche active d'un stage et d'une alternance en développement d'applications.
-      </p>
+      </p> -->
 
       <p class="contact-info">
         Contactez-moi : 

@@ -123,7 +123,7 @@ const competences = {
   ],
   baseDeDonnees: [
     { nom: 'SQL', logo: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
-    { nom: 'PostgreSQL', logo: psql },
+    { nom: 'Postgres', logo: psql },
     { nom: 'JDBC', logo: jdbc },
     { nom: 'Supabase', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg' }
   ],
