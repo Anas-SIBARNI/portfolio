@@ -8,6 +8,9 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "deploy": "npm run build && rsync -avz dist/ mon-portfolio:/var/www/anas-sibarni.xyz"  },
+  "engines": {
+    "node": "22"
+  },
   "dependencies": {
     "vue": "^3.5.22"
   },
