@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
+    "start": "serve -s dist -l ${PORT:-3000}",
     "deploy": "npm run build && rsync -avz dist/ mon-portfolio:/var/www/anas-sibarni.xyz"  },
   "engines": {
     "node": "22"
   },
   "dependencies": {
+    "serve": "^14.2.4",
     "vue": "^3.5.22"
   },
   "devDependencies": {
