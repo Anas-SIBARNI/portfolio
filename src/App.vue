@@ -29,17 +29,26 @@ import stockPro from './assets/screens-projects/stockpro.png';
 import clickme from './assets/screens-projects/clickme.png';
 import bumpless2 from './assets/screens-projects/bumpless2.png';
 import hubzy from './assets/screens-projects/hubzy.png';
+import habits from './assets/screens-projects/habits.jpeg';
 
 
 
 const projets = [
   {
-    id: 1,
+    id: 0,
     titre: 'Hubzy - Stage & Freelance Développeur FullStack',
     description: 'Conception Fullstack d\'un système de gestion de kiosks à colis connectés pour chantiers : API REST centrale en architecture hexagonale, auth JWT/RBAC, dashboard d\'administration',
     outils: ['TypeScript', 'Next.js', 'Postgres', 'Drizzle', 'Claude'],
     image: hubzy, 
     githubUrl: 'https://hubzy.fr'
+  },
+  {
+    id: 1,
+    titre: 'Habits - Application de suivi d\'habitudes',
+    description: 'Conception de bout en bout d\'une application web de suivi d\'habitudes : authentification, gestion d\'habitudes, calcul taux de réussite, historique calendaire, rappels quotidiens par notifications push.',
+    outils: ['TypeScript', 'Next.js', 'Postgres', 'Drizzle', 'Claude', 'Dokploy'],
+    image: habits, 
+    githubUrl: 'https://habits.anas-sibarni.xyz'
   },
   {
     id: 2,
