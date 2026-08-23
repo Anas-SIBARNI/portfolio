@@ -69,7 +69,7 @@ const projets = [
   {
     id: 4,
     titre: 'StockPro - Landing page',
-    description: 'Développent d’une landing page statique pour un SaaS de gestion de stock qui n’existe pas encore',
+    description: 'Développement d’une landing page statique pour un SaaS de gestion de stock qui n’existe pas encore',
     outils: ['React', 'HTML', 'TypeScript', 'Tailwind CSS'],
     image: stockPro,
     galerie: [stockPro],

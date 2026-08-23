@@ -24,7 +24,7 @@ async function copierEmail() {
 
       <h2 class="role-titre">Étudiant Développeur Full-Stack</h2>
       <p class="accroche">
-        Étudiant en 3ème année de BUT Informatique, parcours réalisation d'applications.
+        Étudiant en 3ème année de BUT Informatique, parcours réalisation d'applications. Disponible pour une alternance dès maintenant.
       </p>
       
       <a href="/cv_Anas_SIBARNI.pdf" download class="btn-cta">
