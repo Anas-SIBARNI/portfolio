@@ -24,7 +24,7 @@ async function copierEmail() {
 
       <h2 class="role-titre">Étudiant Développeur Full-Stack</h2>
       <p class="accroche">
-        Stagiaire chez <i>Hubzy</i>. Étudiant en 2ème année de BUT Informatique, parcours réalisation d'applications.
+        Étudiant en 3ème année de BUT Informatique, parcours réalisation d'applications.
       </p>
       
       <a href="/cv_Anas_SIBARNI.pdf" download class="btn-cta">

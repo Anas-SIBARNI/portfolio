@@ -28,12 +28,21 @@ import portfolioImg from './assets/screens-projects/portfolio.png';
 import stockPro from './assets/screens-projects/stockpro.png';
 import clickme from './assets/screens-projects/clickme.png';
 import bumpless2 from './assets/screens-projects/bumpless2.png';
+import hubzy from './assets/screens-projects/hubzy.png';
 
 
 
 const projets = [
   {
-    id: 0,
+    id: 1,
+    titre: 'Hubzy - Stage & Freelance Développeur FullStack',
+    description: 'Conception Fullstack d\'un système de gestion de kiosks à colis connectés pour chantiers : API REST centrale en architecture hexagonale, auth JWT/RBAC, dashboard d\'administration',
+    outils: ['TypeScript', 'Next.js', 'Postgres', 'Drizzle', 'Claude'],
+    image: hubzy, 
+    githubUrl: 'https://hubzy.fr'
+  },
+  {
+    id: 2,
     titre: 'Bumpless 2 - Jeu de tir multi-joueur',
     description: 'Jeu de combat avec tanks, 2 modes solo et multi-joueur. Équipe de 3, git partagé multi-branch. Architecture Client/Serveur.',
     outils: ['TypeScript', 'Node.js', 'HTML', 'CSS', 'Tailwind'],
@@ -41,7 +50,7 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI/Bumpless-2'
   },
   {
-    id: 1,
+    id: 3,
     titre: 'Mazy - Jeu de labyrinthes procéduraux',
     description: 'Jeu de labyrinthes 2D développé en équipe. Architecture MVC, principes SOLID (Clean Code) et campagne de tests unitaires.',
     outils: ['Java', 'JavaFX', 'JUnit', 'Maven', 'Git'],
@@ -49,7 +58,7 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI/mazy'
   },
   {
-    id: 2,
+    id: 4,
     titre: 'StockPro - Landing page',
     description: 'Développent d’une landing page statique pour un SaaS de gestion de stock qui n’existe pas encore',
     outils: ['React', 'HTML', 'TypeScript', 'Tailwind CSS'],
@@ -58,7 +67,7 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI' 
   },
   {
-    id: 3,
+    id: 5,
     titre: 'ClickMe - Jeu de clique',
     description: 'Jeu consistant à cliquer sur un bouton. Authentification, sauvegarde des scores, scoreboard via Supabase.',
     outils: ['Angular','Supabase', 'TypeScript', 'Tailwind CSS', 'HTML'],
@@ -67,7 +76,7 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI' 
   },
   {
-    id: 4,
+    id: 6,
     titre: 'Bumpless - Jeu de combat de chars',
     description: 'Jeu en 1v1 en temps réel avec système de bonus/malus, collisions, classement des scores et persistance simple en CSV. Avec interface graphique !',
     outils: ['Python', 'Pygame', 'CSV', 'Pandas'],
@@ -75,7 +84,7 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI/Bumpless' 
   },
   {
-    id: 5,
+    id: 7,
     titre: 'Sirtet - Jeu de briques dans un terminal',
     description: 'Jeu de briques en temps réel développé en équipe selon la méthode agile, avec sauvegarde des scores.',
     outils: ['Java', 'Lanterna'],
@@ -83,7 +92,7 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI/Sirtet' 
   },
   {
-    id: 6,
+    id: 8,
     titre: 'FlexiPass - Gestionnaire de mot de passe',
     description: 'Logiciel d\'un générateur de mots de passe personnalisable, avec copie dans le presse-papiers et enregistrement.',
     outils: ['Python', 'CustomTkinter', 'Pyperclip'],
@@ -91,7 +100,7 @@ const projets = [
     githubUrl: 'https://github.com/Anas-SIBARNI/FlexiPass'
   },
   {
-    id: 7,
+    id: 9,
     titre: 'Portfolio - (ce site)',
     description: 'Plateforme web pour présenter mon profil et mes projets. Ce portfolio a été développé avec Vue.js, un framework appris en dehors de mon cursus universitaire...',
     outils: ['Vue.js', 'Vite', 'Typescript', 'HTML5', 'CSS3', 'Vibe Coding'],
