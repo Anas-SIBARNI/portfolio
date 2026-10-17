@@ -2,7 +2,7 @@
 
 Bienvenue sur le dépôt de mon portfolio personnel. Ce projet a été développé pour présenter mon profil, mes compétences et mes réalisations. C'est une application "Single Page Application" (SPA) conçue avec **Vue.js 3** et **TypeScript**.
 
-**➡️ Site en ligne : [anas-sibarni.xyz](https://anas-sibarni.xyz)**
+**➡️ Site en ligne : [anas.sibarni.pro](https://anas.sibarni.pro)**
 
 ## ✅ Fonctionnalités
 

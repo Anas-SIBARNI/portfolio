@@ -48,7 +48,7 @@ const projets = [
     description: 'Conception de bout en bout d\'une application web de suivi d\'habitudes : authentification, gestion d\'habitudes, calcul taux de réussite, historique calendaire, rappels quotidiens par notifications push.',
     outils: ['TypeScript', 'Next.js', 'Postgres', 'Drizzle', 'Claude', 'Dokploy'],
     image: habits, 
-    githubUrl: 'https://habits.anas-sibarni.xyz'
+    githubUrl: 'https://habits.sibarni.pro'
   },
   {
     id: 2,
